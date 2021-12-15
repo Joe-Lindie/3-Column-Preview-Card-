@@ -1,0 +1,157 @@
+/*Basic Styling*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /*Primary Colors*/
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  /*Neutral Colors*/
+  --Transparent-white-text: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Outfit", sans-serif;
+
+  margin: 5.31rem 1.5rem;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: var(--Very-light-gray);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Mobile Design Start*/
+
+#sedans-container {
+  background-color: var(--Bright-orange);
+  border-top-left-radius: 0.62rem;
+  border-top-right-radius: 0.62rem;
+  height: 27.6rem;
+  width: 20.3rem;
+}
+
+img {
+  width: 4rem;
+  height: 2.5rem;
+  margin: 3rem 0 2.43rem 3rem;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: var(--Very-light-gray);
+  padding-left: 3rem;
+  padding-bottom: 2.43rem;
+}
+
+p {
+  color: var(--Transparent-white-text);
+  padding: 0 3.5rem 1.68rem 3rem;
+  line-height: 25px;
+  color: var(--Transparent-white-text);
+}
+
+.sedans-BTN,
+.SUV-BTN,
+.LUXURY-BTN {
+  width: 9rem;
+  height: 3rem;
+  border: none;
+  border-radius: 20px;
+  margin-left: 3rem;
+  background-color: var(--Very-light-gray);
+}
+
+.sedans-BTN {
+  color: var(--Bright-orange);
+}
+
+.SUV-BTN {
+  color: var(--Dark-cyan);
+}
+
+.LUXURY-BTN {
+  color: var(--Very-dark-cyan);
+}
+
+/* Active States */
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid var(--Very-light-gray);
+  background-color: transparent;
+}
+
+.sedans-BTN:hover,
+.SUV-BTN:hover,
+.LUXURY-BTN:hover {
+  color: var(--Very-light-gray);
+}
+/* Active States End */
+
+#SUV-container {
+  background-color: var(--Dark-cyan);
+  height: 27.6rem;
+  width: 20.3rem;
+}
+
+#LUXURY-container {
+  background-color: var(--Very-dark-cyan);
+  border-bottom-left-radius: 0.62rem;
+  border-bottom-right-radius: 0.62rem;
+  height: 27.6rem;
+  width: 20.3rem;
+}
+
+/*End of Mobile Design*/
+
+/*Desktop Design*/
+
+@media (min-width: 760px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 760px) {
+  #LUXURY-container,
+  #sedans-container,
+  #SUV-container {
+    border-radius: 0;
+    height: 31.25rem;
+    width: 19.18rem;
+  }
+}
+
+@media (min-width: 760px) {
+  #sedans-container {
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+  }
+}
+@media (min-width: 760px) {
+  #LUXURY-container {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+}
