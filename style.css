@@ -25,18 +25,17 @@ body {
   font-family: "Lexend Deca", sans-serif;
   font-family: "Big Shoulders Display", cursive;
   font-family: "Outfit", sans-serif;
-
   margin: 5.31rem 1.5rem;
   font-size: 15px;
   font-weight: 400;
   background-color: var(--Very-light-gray);
-   min-height: 100vh;
-}
 
-main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  background-size: 100%;
 }
 
 /*Mobile Design Start*/
