@@ -30,6 +30,7 @@ body {
   font-size: 15px;
   font-weight: 400;
   background-color: var(--Very-light-gray);
+   min-height: 100vh;
 }
 
 main {
