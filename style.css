@@ -60,6 +60,7 @@ h1 {
   color: var(--Very-light-gray);
   padding-left: 3rem;
   padding-bottom: 2.43rem;
+  text-transform: uppercase;
 }
 
 p {
