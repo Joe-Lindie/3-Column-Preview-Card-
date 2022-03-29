@@ -69,9 +69,9 @@ p {
   color: var(--Transparent-white-text);
 }
 
-.sedans-BTN,
-.SUV-BTN,
-.LUXURY-BTN {
+.sedans-btn,
+.suv-btn,
+.luxury-btn {
   width: 9rem;
   height: 3rem;
   border: none;
@@ -80,15 +80,15 @@ p {
   background-color: var(--Very-light-gray);
 }
 
-.sedans-BTN {
+.sedans-btn {
   color: var(--Bright-orange);
 }
 
-.SUV-BTN {
+.suv-btn {
   color: var(--Dark-cyan);
 }
 
-.LUXURY-BTN {
+.luxury-btn {
   color: var(--Very-dark-cyan);
 }
 
@@ -100,20 +100,20 @@ button:hover {
   background-color: transparent;
 }
 
-.sedans-BTN:hover,
-.SUV-BTN:hover,
-.LUXURY-BTN:hover {
+.sedans-btn:hover,
+.suv-btn:hover,
+.luxury-btn:hover {
   color: var(--Very-light-gray);
 }
 /* Active States End */
 
-#SUV-container {
+#suv-container {
   background-color: var(--Dark-cyan);
   height: 27.6rem;
   width: 20.3rem;
 }
 
-#LUXURY-container {
+#luxury-container {
   background-color: var(--Very-dark-cyan);
   border-bottom-left-radius: 0.62rem;
   border-bottom-right-radius: 0.62rem;
@@ -134,9 +134,9 @@ button:hover {
 }
 
 @media (min-width: 760px) {
-  #LUXURY-container,
+  #luxury-container,
   #sedans-container,
-  #SUV-container {
+  #suv-container {
     border-radius: 0;
     height: 31.25rem;
     width: 19.18rem;
@@ -150,7 +150,7 @@ button:hover {
   }
 }
 @media (min-width: 760px) {
-  #LUXURY-container {
+  #luxury-container {
     border-top-right-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;
   }
